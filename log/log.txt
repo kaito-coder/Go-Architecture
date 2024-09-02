@@ -1,0 +1,2 @@
+{"level":"INFO","ts":"2024-08-31T11:38:56.361+0700","caller":"cli/main.log.go:27","msg":"Infor log","line":1}
+{"level":"ERROR","ts":"2024-08-31T11:38:56.362+0700","caller":"cli/main.log.go:28","msg":"Error log","line":2}

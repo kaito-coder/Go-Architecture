@@ -11,6 +11,7 @@ func Run() {
 	m := global.Config.Mysql
 	fmt.Printf("User: %s, Host: %s, Port: %s, Password: %s\n", m.User, m.Host, m.Port, m.Password)
 	InitLogger()
+	global.Logger.Info("Logger init success")
 	InitMysql()
 	InitRedis()
 

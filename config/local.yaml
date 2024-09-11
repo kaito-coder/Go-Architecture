@@ -1,8 +1,9 @@
 server:
   port : 8080
+  mode : "dev"
 mysql:
   host: localhost
-  port: 3306
+  port: 3307
   user: root
   password: root
   dbname: test

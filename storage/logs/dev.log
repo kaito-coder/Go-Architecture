@@ -1,3 +1,17 @@
 {"level":"INFO","ts":"2024-09-02T21:29:45.128+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
 {"level":"INFO","ts":"2024-09-04T22:54:44.570+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
 {"level":"INFO","ts":"2024-09-04T22:54:44.589+0700","caller":"initialize/mysql.go:26","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-11T15:30:15.750+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"ERROR","ts":"2024-09-11T15:30:15.759+0700","caller":"initialize/mysql.go:16","msg":"Failed to connect to database","error":"Error 1045 (28000): Access denied for user 'root'@'192.168.65.1' (using password: YES)"}
+{"level":"INFO","ts":"2024-09-11T16:56:03.613+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-11T16:56:03.630+0700","caller":"initialize/mysql.go:26","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-11T16:56:57.327+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-11T16:56:57.333+0700","caller":"initialize/mysql.go:26","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-11T17:05:26.479+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-11T17:05:26.487+0700","caller":"initialize/mysql.go:26","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-11T17:39:37.030+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-11T17:39:37.040+0700","caller":"initialize/mysql.go:26","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-11T17:44:35.507+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-11T17:44:35.516+0700","caller":"initialize/mysql.go:26","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-11T17:44:55.756+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-11T17:44:55.764+0700","caller":"initialize/mysql.go:26","msg":"Database init successful"}

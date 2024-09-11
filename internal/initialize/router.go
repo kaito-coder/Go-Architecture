@@ -1,52 +1,42 @@
 package initialize
 
 import (
-	"fmt"
-
 	"github.com/gin-gonic/gin"
-	c "github.com/kaito-coder/go-ecommerce-architecture/internal/controller"
-	"github.com/kaito-coder/go-ecommerce-architecture/internal/middlewares"
+	"github.com/kaito-coder/go-ecommerce-architecture/global"
+	"github.com/kaito-coder/go-ecommerce-architecture/internal/routers"
 )
-func AA() gin.HandlerFunc {
-	return func(ctx *gin.Context) {
-		fmt.Println("Before --> AA")
-		ctx.Next()
-		fmt.Println("After --> AA")
-	}
-}
-func BB() gin.HandlerFunc {
-	return func(ctx *gin.Context) {
-		fmt.Println("Before --> BB")
-		ctx.Next()
-		fmt.Println("After --> BB")
-	}
-}
-func CC(c *gin.Context) {
-	fmt.Println("Before --> CC")
-	c.Next()
-	fmt.Println("After --> CC")
-}
+
 
 
 func InitRouter() *gin.Engine {
-	r := gin.Default()
-	r.Use(middlewares.AuthMiddleware(),AA(), BB(), CC)
-	v1 := r.Group("/v1")
+	var r *gin.Engine
+	if global.Config.Server.Mode == "dev"{
+		gin.SetMode(gin.DebugMode)
+		gin.ForceConsoleColor()
+		r = gin.Default()
+	}else {
+		gin.SetMode(gin.ReleaseMode)
+		r = gin.New()
+	}
+	// middlewares
+	//r.Use(middleware.limiter())
+	//r.Use(middleware.Cors())
+	//r.Use(middleware.Logger())
+	//r.Use(middleware.Recovery())
+	adminRouter := routers.RouterGroupApp.Admin
+	userRouter := routers.RouterGroupApp.User
+
+	MainGroup := r.Group("/v1")
 	{
-		v1.GET("/user/:uid", c.NewUserController().GetUserById)
-		v1.GET("/ping", pong)
-		v1.GET("/ping/:uid", pong)
-		v1.POST("/ping", pong)
-		v1.PUT("/ping/:uid", pong)
-		v1.DELETE("/ping/:uid", pong)
+		MainGroup.GET("/checkStatus")
+	}
+	{
+		userRouter.InitUserRouter(MainGroup)
+	}
+	{
+		adminRouter.InitAdminRouter(MainGroup)
+		adminRouter.InitUserRouter(MainGroup)
 	}
 	return r
 }
-func pong(c *gin.Context) {
-	query := c.Query("name")
-	defaultQuery := c.DefaultQuery("name", "default")
-	param := c.Param("uid")
-	c.JSON(200, gin.H{
-		"message": "pong" + query + param + defaultQuery,
-	})
-}
+

@@ -1,0 +1,60 @@
+version: '3.9'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - go-ecommerce-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+
+  redis:
+    image: redis:6.0
+    container_name: redis_container
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - go-ecommerce-network
+    volumes:
+      - ./redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      retries: 5
+
+  ecommerce-api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: ecommerce_api_container
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - go-ecommerce-network
+
+networks:
+  go-ecommerce-network:
+    driver: bridge
+
+volumes:
+  mysql:
+  redis:

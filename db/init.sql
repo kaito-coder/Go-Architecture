@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS `ecommerce`;
+USE `ecommerce`;
+-- Add other initialization SQL commands here.
+
 DROP TABLE IF EXISTS `crm_user`;
 
 CREATE TABLE

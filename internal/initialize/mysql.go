@@ -27,8 +27,8 @@ func InitMysql() {
 	global.Logger.Info("Database init successful")
 	global.Mdb = db
 	SetPool()
-	// genTableNames()
-	MigrateTables()
+	genTableNames()
+	//MigrateTables()
 }
 func SetPool() {
 	m := global.Config.Mysql

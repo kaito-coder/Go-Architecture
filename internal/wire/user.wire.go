@@ -1,3 +1,5 @@
+//go:build wireinject 
+ // +build wireinject 
 package wire
 
 import (
@@ -7,7 +9,7 @@ import (
 	"github.com/kaito-coder/go-ecommerce-architecture/internal/service"
 )
 
-func InitializeUserRouter() (*controller.UserController, error ) {
+func InitUserRouterHandler() (*controller.UserController, error ) {
 	wire.Build(
 		repo.NewUserRepository,
 		service.NewUserService,

@@ -15,3 +15,51 @@
 {"level":"INFO","ts":"2024-09-11T17:44:35.516+0700","caller":"initialize/mysql.go:26","msg":"Database init successful"}
 {"level":"INFO","ts":"2024-09-11T17:44:55.756+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
 {"level":"INFO","ts":"2024-09-11T17:44:55.764+0700","caller":"initialize/mysql.go:26","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-15T22:20:31.160+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T22:20:31.174+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-15T22:29:49.534+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T22:29:49.541+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-15T22:31:54.046+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T22:31:54.054+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-15T22:31:54.121+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_email' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-15T22:32:23.923+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T22:32:23.930+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-15T22:32:23.956+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_email' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-15T22:34:56.295+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T22:34:56.304+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-15T22:34:56.333+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_email' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-15T23:20:38.459+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T23:20:38.463+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-15T23:20:38.522+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_username' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-15T23:23:18.925+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T23:23:18.933+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-15T23:23:18.958+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_username' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-15T23:25:37.951+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T23:25:37.957+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-15T23:26:36.561+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T23:26:36.567+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-15T23:26:36.587+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_email' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-15T23:39:30.714+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-15T23:39:30.724+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-15T23:39:30.753+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_username' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-16T09:09:34.213+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-16T09:09:34.217+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-16T09:10:35.545+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-16T09:10:35.550+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-16T09:10:35.563+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_email' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-16T09:13:15.520+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-16T09:13:15.524+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-16T09:13:15.537+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_email' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-16T09:14:00.517+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-16T09:14:00.521+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-16T09:14:00.534+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_username' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-18T14:30:57.266+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"ERROR","ts":"2024-09-18T14:30:57.270+0700","caller":"initialize/mysql.go:17","msg":"Failed to connect to database","error":"dial tcp [::1]:3307: connect: connection refused"}
+{"level":"INFO","ts":"2024-09-18T14:31:49.315+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-18T14:31:49.335+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-18T14:31:49.362+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_username' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-18T14:32:13.826+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-18T14:32:13.833+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"ERROR","ts":"2024-09-18T14:32:13.901+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_phone' used in key specification without a key length"}
+{"level":"INFO","ts":"2024-09-18T14:32:24.760+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-18T14:32:24.767+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}

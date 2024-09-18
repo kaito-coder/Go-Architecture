@@ -2,9 +2,6 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/kaito-coder/go-ecommerce-architecture/internal/controller"
-	"github.com/kaito-coder/go-ecommerce-architecture/internal/repo"
-	"github.com/kaito-coder/go-ecommerce-architecture/internal/service"
 	"github.com/kaito-coder/go-ecommerce-architecture/internal/wire"
 )
 
@@ -16,7 +13,7 @@ import (
 		// uR := repo.NewUserRepository()
 		// us := service.NewUserService(uR)
 		// userController := controller.NewUserController(us)
-		userController, _ := wire.InitializeUserRouter()
+		userController, _ := wire.InitUserRouterHandler()
 		userRouterPublic := Router.Group("/users",userController.Register)
 		{
 			userRouterPublic.POST("/register")

@@ -14,9 +14,9 @@ import (
 		// us := service.NewUserService(uR)
 		// userController := controller.NewUserController(us)
 		userController, _ := wire.InitUserRouterHandler()
-		userRouterPublic := Router.Group("/users",userController.Register)
+		userRouterPublic := Router.Group("/users")
 		{
-			userRouterPublic.POST("/register")
+			userRouterPublic.POST("/register", userController.Register)
 			userRouterPublic.POST("/login")
 			userRouterPublic.POST("/otp")
 		}

@@ -1,0 +1,11 @@
+@baseUrl=http://localhost:8080/v1
+
+### User Register
+
+POST {{baseUrl}}/users/register
+Content-Type: application/json
+
+{
+  "email": "dzung@easyrx.com",
+  "purpose": "test"
+}

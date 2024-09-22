@@ -10,8 +10,8 @@ services:
     ports:
       - "3307:3306"
     volumes:
-      - ./mysql:/var/lib/mysql
-      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ../../mysql:/var/lib/mysql
+      - ../../db/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - go-ecommerce-network
     healthcheck:
@@ -29,7 +29,7 @@ services:
     networks:
       - go-ecommerce-network
     volumes:
-      - ./redis:/data
+      - ../../redis:/data
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 10s
@@ -37,8 +37,8 @@ services:
 
   ecommerce-api:
     build: 
-      context: .
-      dockerfile: Dockerfile
+      context: ../../
+      dockerfile: deployments/development/Dockerfile
     container_name: ecommerce_api_container
     restart: always
     ports:
@@ -48,6 +48,8 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
+    volumes:
+      - ../../:/app
     networks:
       - go-ecommerce-network
 

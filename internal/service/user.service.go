@@ -26,8 +26,8 @@ type IUserService interface {
 	Register(email string, purpose string) int
 }
 type UserService struct {
-	userRepo repo.IUserRepository
-	userAuthRepo repo.IUserAuthRepository	
+	userRepo     repo.IUserRepository
+	userAuthRepo repo.IUserAuthRepository
 }
 
 // Register implements IUserService.
@@ -42,7 +42,7 @@ func (us *UserService) Register(email string, purpose string) int {
 	}
 	// 3. new OTP -> ..
 	otp := utils.GenerateSixDigitOtp()
-	if purpose == "TEST"{
+	if purpose == "TEST" {
 		otp = 123456
 	}
 	// 4. save OTP to redis
@@ -51,7 +51,7 @@ func (us *UserService) Register(email string, purpose string) int {
 		return response.ErrOTPInvalid
 	}
 	// 5. send OTP to email
-	err = sendto.SendEmailOTP([]string{email}, "kaitok57a01@gmail.com",strconv.Itoa(otp))
+	err = sendto.SendEmailOTP([]string{email}, "kaitok57a01@gmail.com", strconv.Itoa(otp))
 	if err != nil {
 		return response.ErrorSendEmailFail
 	}
@@ -62,7 +62,7 @@ func (us *UserService) Register(email string, purpose string) int {
 
 func NewUserService(userRepo repo.IUserRepository, userAuthRepo repo.IUserAuthRepository) IUserService {
 	return &UserService{
-		userRepo: userRepo,
+		userRepo:     userRepo,
 		userAuthRepo: userAuthRepo,
 	}
 }

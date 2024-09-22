@@ -63,3 +63,71 @@
 {"level":"ERROR","ts":"2024-09-18T14:32:13.901+0700","caller":"initialize/mysql.go:61","msg":"Failed to migrate tables","error":"Error 1170 (42000): BLOB/TEXT column 'usr_phone' used in key specification without a key length"}
 {"level":"INFO","ts":"2024-09-18T14:32:24.760+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
 {"level":"INFO","ts":"2024-09-18T14:32:24.767+0700","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-22T16:03:40.582+0700","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"ERROR","ts":"2024-09-22T16:03:45.586+0700","caller":"initialize/mysql.go:17","msg":"Failed to connect to database","error":"dial tcp: lookup mysql_container: no such host"}
+{"level":"INFO","ts":"2024-09-24T10:45:05.723Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:45:05.728Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:45:05.776Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:46:24.035Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:46:24.037Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:46:24.057Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:46:24.976Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:46:24.979Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:46:24.999Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:30.381Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:30.386Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:30.407Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:31.567Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:31.569Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:31.587Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:32.737Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:32.739Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:32.760Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:33.881Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:33.883Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:33.903Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:35.013Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:35.015Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:35.034Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:36.153Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:36.155Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:36.172Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:37.335Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:37.337Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:37.356Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:38.491Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:38.492Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:38.511Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:39.634Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:39.636Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:39.654Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:40.794Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:40.795Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:40.814Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:41.942Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:41.945Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:41.966Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:43.090Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:43.092Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:43.113Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:44.241Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:44.243Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:44.261Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:45.395Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:45.397Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:45.415Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:46.552Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:46.554Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:46.571Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:47.713Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:47.715Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:47.736Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:49:48.853Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:49:48.855Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:49:48.872Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:50:15.975Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:50:15.980Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:50:16.000Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
+{"level":"INFO","ts":"2024-09-24T10:53:26.797Z","caller":"initialize/run.go:14","msg":"Logger init success"}
+{"level":"INFO","ts":"2024-09-24T10:53:26.802Z","caller":"initialize/mysql.go:27","msg":"Database init successful"}
+{"level":"INFO","ts":"2024-09-24T10:53:26.823Z","caller":"initialize/redis.go:44","msg":"key","test":"test kaito"}
